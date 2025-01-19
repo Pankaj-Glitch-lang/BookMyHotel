@@ -1,0 +1,92 @@
+.booking-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .room-image {
+    width: 400px;
+    height: 300px;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+  
+  .room-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .booking-form {
+    width: 400px;
+  }
+  
+  .guest-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .guest-info {
+    margin-bottom: 15px;
+  }
+  
+  .guest-info label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .guest-info input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .age-gender {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gender-radio {
+    margin-left: 10px;
+  }
+  
+  .gender-radio input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .booking-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .booking-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .booking-item span:first-child {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .booking-item input[type="date"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  .booking{
+    padding: 50px;
+  }
+  
+  

@@ -1,0 +1,80 @@
+.hotel-details {
+    position: relative;
+    height: 60vh;
+    background-image: url(https://s3-alpha-sig.figma.com/img/bb82/79e4/5873481750f384333afa91ed882d90d6?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jbib-WBKKsbJKrHFyk8dux9h5X6yr9jntoXUFF65mjRq223m4M5bp9RwBVZv4IimWGUCHFXPgoA45YphHLELBo4W7Mhk~jnBwESjbu0989bOzywj9INJRpYuqZsEdlPHXYhUjXk1xPqgCyZcidH7CexRdLFwpBztXCN2Bt~oqO9k~6JkE8F66FYF33ZUFjp70phZyuCgfH6eTVJRf98RbZvDD4ekU28L6D9It4j7G~sqrVdYV5lxWueiGfN4YFAzMUF7~i9wQFXH1j~hOKAm9HmDQbkz-6BgQ6rpT~7vMJBRM1tbdrjEwqBCa8WUvmhrvY79maMH3eJ~IUFsH7Ca3g__);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Overlay to darken the image */
+.hotel-details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 8, 8, 0.5);  /* Dark overlay with 50% opacity */
+    z-index: 1;  /* Makes sure the overlay is above the background image but below the text */
+}
+
+/* Ensure text remains above the overlay */
+.hotel-details > * {
+    position: relative;
+    z-index: 2;
+}
+
+.content{
+    margin: auto;
+    
+}
+.content>span{
+    margin: 7px;
+    font-size: medium;
+    font-weight: lighter;
+}
+.content>h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin-top: 40px;
+    width: 100%;
+
+    
+}
+.room{
+    margin: auto;
+    border: 2px solid rgb(56, 55, 55);
+    padding: 15px;
+}
+img{
+    border-radius: 15px;
+   
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-book{
+    background-color: rgb(50, 50, 247);
+    color: white;
+    font-size: larger;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+
+}
+a{
+    text-decoration: none;
+}
+

@@ -1,0 +1,54 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff; /* Primary color */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.navbar img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Links container */
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Active link styling (optional if using active state) */
+.navbar a.active {
+  color: #ffd700;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
